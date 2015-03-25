@@ -23,7 +23,7 @@ public class UserServiceImpl implements UserService {
 
 		User user = userDAO.findUserByEmailId(email);
 		
-		if(user!=null && passwordMatch(password, user.getPassword())) {
+		if(user!=null && passwordMatch(password, user.getPassword()))  {
 			
 			return user;
 		}
